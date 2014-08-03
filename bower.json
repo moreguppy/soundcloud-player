@@ -1,0 +1,25 @@
+{
+  "name": "middleman-bower-plate",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery.transit": "",
+    "modernizr": "",
+    "normalize-css": ""
+  },
+  "authors": [
+    "Mike Guppy <hello@anothersight.com>"
+  ],
+  "description": "Boilerplate for static sites",
+  "main": "?",
+  "license": "MIT",
+  "homepage": "anothersight.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "thirdparty",
+    "source/thirdparty",
+    "test",
+    "tests"
+  ]
+}

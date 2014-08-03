@@ -1,5 +1,16 @@
 ---
-title: My Super Awewsome Site
+title: Middleman boilerplate
 ---
 
-%h1 Gr8
+/ Assets 
+
+- content_for(:javascripts) do
+  = javascript_include_tag  "app"
+
+- content_for(:stylesheets) do
+  = stylesheet_link_tag  "app"
+
+/ Haml
+
+%h1 Hello
+= image_tag "picard.gif"

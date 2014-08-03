@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/animade/bourbon.git
+  revision: 541285d30aca24688484872a9709ec946769c27f
+  branch: bourbon-3.2.0
+  specs:
+    bourbon (3.2.3)
+      sass (~> 3.2)
+      thor
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -115,8 +124,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon!
   haml
   middleman (~> 3.3.3)
   middleman-livereload (~> 3.1.0)
-  tzinfo-data
-  wdm (~> 0.1.0)

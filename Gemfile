@@ -1,17 +1,12 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
 source 'http://rubygems.org'
+
+# We need to use the 3.2.0 branch as middleman depends on
+# SASS 3.2, whereas bourbon master needs SASS 3.3
+# Also relative paths mean we can't install via bundler
+gem 'bourbon', :git => 'https://github.com/animade/bourbon.git', :branch => 'bourbon-3.2.0'
+
+gem 'haml'
 
 gem "middleman", "~>3.3.3"
 
-# Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
-
-# For faster file watcher updates on Windows:
-gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
-
-# Windows does not come with time zone data
-gem "tzinfo-data", platforms: [:mswin, :mingw]
-
-# HAML templating
-gem 'haml'
