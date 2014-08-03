@@ -11,3 +11,4 @@
 //= require "../thirdparty/jquery.transit/jquery.transit.js"
 
 //= require modules/welcome
+//= require modules/player

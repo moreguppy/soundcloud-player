@@ -6,11 +6,14 @@ title: Middleman boilerplate
 
 - content_for(:javascripts) do
   = javascript_include_tag  "app"
+  = javascript_include_tag "http://connect.soundcloud.com/sdk.js"
 
 - content_for(:stylesheets) do
   = stylesheet_link_tag  "app"
 
 / Haml
 
-%h1 Hello
-= image_tag "picard.gif"
+%h1 Play track using soundcloud api
+%a{:href => '#', :class => 'js-play-track', :data => {'track' => 'https://soundcloud.com/thisisfyfe/for-you'}} Play Fyfe 'For You'
+%br
+%a{:href => '#', :class => 'js-pause-track'} Pause track
