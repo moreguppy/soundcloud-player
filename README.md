@@ -27,3 +27,8 @@ The site is now running at `http://0.0.0.0:4567/`
 Middleman builds to a static `build` folder in the root of the project. To create/update this simply run:
 
     middleman build
+
+## Soundlcoud SDK
+
+https://developers.soundcloud.com/docs/api/sdks#javascript
+http://connect.soundcloud.com/examples/streaming.html

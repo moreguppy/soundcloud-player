@@ -55,9 +55,13 @@
       var path = '/tracks/' + id;
 
       SC.stream(path, function(sound) {
+
+        // Play track
         sound.play();
-        console.log(sound);
+
+        // Assign to a global variable
         self.currentTrack = sound;
+
       });
 
     },
@@ -68,7 +72,7 @@
 
       // Play track
 
-      $('.js-play-track').click(function() {
+      $('.js-load-track').click(function() {
 
         var track_url = $(this).attr('data-track');
 
@@ -79,17 +83,36 @@
 
       });
 
-      // Pause track
+      // Pause current track
+
+      $('.js-play-track').click(function() {
+
+        self.currentTrack.play();
+
+        return false;
+
+      });
+
+      // Pause current track
 
       $('.js-pause-track').click(function() {
-
-        var track_url = $(this).attr('data-track');
 
         self.currentTrack.pause();
 
         return false;
 
       });
+
+      // Watch
+
+      setInterval(function() {
+
+        if (self.currentTrack) {
+          var completed = self.currentTrack.position / self.currentTrack.duration * 100
+          console.log(completed + '%');
+        }
+
+      }, 300);
 
 
     },
