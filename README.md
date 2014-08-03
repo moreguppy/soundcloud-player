@@ -32,3 +32,4 @@ Middleman builds to a static `build` folder in the root of the project. To creat
 
 https://developers.soundcloud.com/docs/api/sdks#javascript
 http://connect.soundcloud.com/examples/streaming.html
+http://www.schillmania.com/projects/soundmanager2/doc/

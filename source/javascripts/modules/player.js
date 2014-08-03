@@ -110,6 +110,9 @@
         if (self.currentTrack) {
           var completed = self.currentTrack.position / self.currentTrack.duration * 100
           console.log(completed + '%');
+
+          $('.js-timer').text(completed + '%');
+
         }
 
       }, 300);
